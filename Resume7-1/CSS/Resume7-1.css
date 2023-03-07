@@ -74,6 +74,7 @@ align-items: baseline;}
 /* EDUCATION flexbox paragraphs and subheadings */
     #Education-positioning {display: flex;
                         flex-direction: row;
+                        
                         /* Aligns the top of the heading and paragraph */
                         align-items: baseline;}
     
