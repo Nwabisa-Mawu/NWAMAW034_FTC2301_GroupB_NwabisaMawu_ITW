@@ -8,6 +8,8 @@ Resume3
 Resume4
 Resume5
 Resume6
+Resume7-1
+Resume7-2
 
 Technologies used:
 HTML CSS
