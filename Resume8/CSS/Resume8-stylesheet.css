@@ -1,0 +1,199 @@
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');
+
+
+
+
+/************************laptop-1366px width and higher**********************/
+
+/*ELEMENT SELECTORS*/
+body {
+    font-family: PT Sans, sans-serif;
+    background: url('http://127.0.0.1:5555/Resume8/images/Page-background.png');
+    background-size: cover;
+    color: #1C1C1C;
+}
+
+a {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EE7600;
+}
+
+.text-alignment,
+h1,
+h2 {
+    text-align: center;
+}
+
+/* Hero div */
+#landing-page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 100px;
+    padding-top: px;
+}
+
+
+/* LANDING-PAGE */
+
+/* Background-image for landing page */
+.hero-image {
+    background: url('http://127.0.0.1:5555/Resume8/images/hero-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+
+/*Name on landing page*/
+h1 {
+    font-size: 10vh;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* Projects list with image links */
+#project-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Project image links */
+.img-size {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* logo and navbar alignment*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+
+    /* background image for nav-bar */
+    background-image:
+        linear-gradient(to bottom, rgba(255, 237, 216, 0.336), rgba(0, 0, 0, 0.336)),
+        url('http://127.0.0.1:5555/Resume8/images/Page-background.png');
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    width: 110%;
+}
+
+#logo {
+    margin-left: -9.25vw;
+    width: 130px;
+    height: 100px;
+}
+
+/* navbar individual items alignment */
+nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -80%;
+}
+
+.nav-items {
+    margin-left: 15px;
+}
+
+/*ID SELECTORS*/
+#Profile-pic {
+    border-radius: 50%;
+}
+
+#landing-page {
+    padding-top: 150px;
+}
+
+/*CLASS SELECTORS*/
+.border-look {
+    border-style: groove;
+    border-color: #EE7600;
+}
+
+
+.section-margins {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* paragraphs for ABOUT*/
+.About-paragraph-margins {
+    margin-left: 60px;
+    margin-right: 180px;
+}
+
+
+
+
+/* EDUCATION flexbox paragraphs and subheadings */
+#Education-positioning {
+    display: flex;
+    flex-direction: row;
+
+    /* Aligns the top of the heading and paragraph */
+    align-items: baseline;
+}
+
+.education-paragraph {
+    border-style: groove;
+    border-color: #EE7600;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-left: 15px;
+    border-style: none none none groove;
+}
+
+.new-background {
+    background-color: #D2B48C;
+}
+
+/***************************************************Tablet-landscape: 768px <= width < 1366px*************************** */
+
+@media screen and (max-width:768px) {
+    form {
+        text-align: center;
+    }
+
+    /* Skills-list */
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/***************************************************Tablet-landscape: 425px <= width < 768px*************************** */
+
+@media screen and (max-width:425px) {
+    #project-list {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    form {
+        text-align: center;
+    }
+}
